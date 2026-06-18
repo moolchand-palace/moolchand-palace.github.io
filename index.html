@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="मूलचंद रॉयल पैलेस — शाही आयोजन स्थल। बुकिंग और संपर्क के लिए देखें।" />
+    <title>मूलचंद रॉयल पैलेस</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="images/Logo-hindi.png" alt="मूलचंद रॉयल पैलेस" class="brand-logo" />
+          <div>
+            <h1 class="site-title">मूलचंद रॉयल पैलेस</h1>
+            <p class="site-sub">शाही आयोजन स्थल</p>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#about">हमारे बारे में</a>
+          <a href="#gallery">गैलरी</a>
+          <a href="#contact">संपर्क</a>
+        </nav>
+        <a class="cta" href="#contact">बुकिंग</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">शाही अनुभव के लिए तैयार</p>
+            <h2>जहाँ आपकी शादी यादगार बनती है</h2>
+            <p class="lead">प्रीमियम हॉल, सजावट और बेहतरीन सेवा — आपकी खुशी हमारी प्राथमिकता।</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#contact">अपनी तारीख सुरक्षित करें</a>
+              <a class="btn btn-ghost" href="#gallery">गैलरी देखें</a>
+            </div>
+            <ul class="features">
+              <li>AC बैंक्वेट हॉल</li>
+              <li>लक्ज़री डेकोर</li>
+              <li>सुरक्षित पार्किंग</li>
+            </ul>
+          </div>
+          <div class="hero-media">
+            <img src="images/Final-Full-Photo.png" alt="Venue photo" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <h3>हमारे बारे में</h3>
+        <p>मूलचंद रॉयल पैलेस में हम पारंपरिक शाही अनुभव को आधुनिक सुविधाओं से जोड़कर यादगार आयोजन तैयार करते हैं।</p>
+      </section>
+
+      <section id="gallery" class="section gallery container">
+        <h3>गैलरी</h3>
+        <div class="grid">
+          <img src="images/Finalised-Banner-Hindi.png" alt="Banner" loading="lazy" />
+          <img src="images/Finalised-Building.png" alt="Building" loading="lazy" />
+          <img src="images/Cover-hindi.png" alt="Facade" loading="lazy" />
+        </div>
+      </section>
+
+      <section id="contact" class="section contact container">
+        <h3>संपर्क</h3>
+        <div class="contact-grid">
+          <div>
+            <p>Near Jagat Raj College, Charkhari Road, Rath, Hamirpur, Uttar Pradesh</p>
+            <p>फोन: <a href="tel:+918447717317">+91 84477 17317</a></p>
+            <p>ईमेल: <a href="mailto:moolchand.palace@gmail.com">moolchand.palace@gmail.com</a></p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="tel:+918447717317">कॉल करें</a>
+              <a class="btn btn-ghost" href="mailto:moolchand.palace@gmail.com">ईमेल भेजें</a>
+            </div>
+          </div>
+          <div class="mapwrap">
+            <iframe src="https://www.google.com/maps?q=25.5770187,79.5870997&z=17&output=embed" loading="lazy" title="Map"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> मूलचंद रॉयल पैलेस</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
