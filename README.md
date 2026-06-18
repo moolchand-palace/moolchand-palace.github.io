@@ -1,6 +1,6 @@
 # moolchand-palace.github.io
 
-Modern single-page site for Moolchand Royal Palace.
+Modern single-page site for Moolchand Royal Palace - https://moolchand-palace.github.io
 
 Local testing
 
