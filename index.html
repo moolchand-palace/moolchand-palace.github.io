@@ -1,95 +1,788 @@
-<!doctype html>
-<html lang="hi">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="मूलचंद रॉयल पैलेस — शाही आयोजन स्थल। बुकिंग और संपर्क के लिए देखें।" />
-    <title>मूलचंद रॉयल पैलेस</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <img src="images/Logo-hindi.png" alt="मूलचंद रॉयल पैलेस" class="brand-logo" />
-          <div>
-            <h1 class="site-title">मूलचंद रॉयल पैलेस</h1>
-            <p class="site-sub">शाही आयोजन स्थल</p>
-          </div>
+<!DOCTYPE html>
+<html lang="hi" data-lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Moolchand Royal Palace — Premium Wedding &amp; Banquet Venue in Rath, Hamirpur, Uttar Pradesh" />
+  <title>Moolchand Royal Palace | मूलचंद रॉयल पैलेस</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <img src="images/Logo-hindi.png" alt="Moolchand Royal Palace" class="nav-logo lang-logo" data-hi="images/Logo-hindi.png" data-en="images/Logo-english.png" />
+        <div class="nav-brand-text">
+          <span class="nav-title" data-hi="मूलचंद रॉयल पैलेस" data-en="Moolchand Royal Palace">मूलचंद रॉयल पैलेस</span>
+          <span class="nav-subtitle" data-hi="शाही विवाह स्थल" data-en="Premium Wedding Venue">शाही विवाह स्थल</span>
         </div>
-        <nav class="main-nav" aria-label="Primary">
-          <a href="#about">हमारे बारे में</a>
-          <a href="#gallery">गैलरी</a>
-          <a href="#contact">संपर्क</a>
-        </nav>
-        <a class="cta" href="#contact">बुकिंग</a>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+        <a href="#about" class="nav-link" data-hi="परिचय" data-en="About">परिचय</a>
+        <a href="#occasions" class="nav-link" data-hi="आयोजन" data-en="Occasions">आयोजन</a>
+        <a href="#amenities" class="nav-link" data-hi="सुविधाएं" data-en="Amenities">सुविधाएं</a>
+        <a href="#gallery" class="nav-link" data-hi="गैलरी" data-en="Gallery">गैलरी</a>
+        <a href="#contact" class="nav-link" data-hi="संपर्क" data-en="Contact">संपर्क</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language between Hindi and English">
+          <span class="lang-opt" id="lo-hi">HI</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-opt" id="lo-en">EN</span>
+        </button>
+        <a href="#contact" class="nav-cta" data-hi="बुकिंग करें" data-en="Book Now">बुकिंग करें</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main id="main">
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow">शाही अनुभव के लिए तैयार</p>
-            <h2>जहाँ आपकी शादी यादगार बनती है</h2>
-            <p class="lead">प्रीमियम हॉल, सजावट और बेहतरीन सेवा — आपकी खुशी हमारी प्राथमिकता।</p>
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="#contact">अपनी तारीख सुरक्षित करें</a>
-              <a class="btn btn-ghost" href="#gallery">गैलरी देखें</a>
-            </div>
-            <ul class="features">
-              <li>AC बैंक्वेट हॉल</li>
-              <li>लक्ज़री डेकोर</li>
-              <li>सुरक्षित पार्किंग</li>
-            </ul>
-          </div>
-          <div class="hero-media">
-            <img src="images/Final-Full-Photo.png" alt="Venue photo" loading="lazy" />
-          </div>
-        </div>
-      </section>
+  <main id="home">
 
-      <section id="about" class="section container">
-        <h3>हमारे बारे में</h3>
-        <p>मूलचंद रॉयल पैलेस में हम पारंपरिक शाही अनुभव को आधुनिक सुविधाओं से जोड़कर यादगार आयोजन तैयार करते हैं।</p>
-      </section>
-
-      <section id="gallery" class="section gallery container">
-        <h3>गैलरी</h3>
-        <div class="grid">
-          <img src="images/Finalised-Banner-Hindi.png" alt="Banner" loading="lazy" />
-          <img src="images/Finalised-Building.png" alt="Building" loading="lazy" />
-          <img src="images/Cover-hindi.png" alt="Facade" loading="lazy" />
-        </div>
-      </section>
-
-      <section id="contact" class="section contact container">
-        <h3>संपर्क</h3>
-        <div class="contact-grid">
-          <div>
-            <p>Near Jagat Raj College, Charkhari Road, Rath, Hamirpur, Uttar Pradesh</p>
-            <p>फोन: <a href="tel:+918447717317">+91 84477 17317</a></p>
-            <p>ईमेल: <a href="mailto:moolchand.palace@gmail.com">moolchand.palace@gmail.com</a></p>
-            <div class="contact-actions">
-              <a class="btn btn-primary" href="tel:+918447717317">कॉल करें</a>
-              <a class="btn btn-ghost" href="mailto:moolchand.palace@gmail.com">ईमेल भेजें</a>
-            </div>
-          </div>
-          <div class="mapwrap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.838974160916!2d79.58452477600572!3d25.57702351621043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399d4318bee263cf%3A0x8a293f798294bd4f!2sMoolchand%20Royal%20Palace!5e0!3m2!1sen!2sin!4v1781770556211!5m2!1sen!2sin" loading="lazy" title="Map"></iframe>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> मूलचंद रॉयल पैलेस</p>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="images/Final-Full-Photo.png" alt="Moolchand Royal Palace exterior" class="hero-img" />
+        <div class="hero-overlay"></div>
       </div>
-    </footer>
+      <div class="hero-content">
+        <div class="hero-ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+        <p class="hero-eyebrow" data-hi="स्वागत है मूलचंद रॉयल पैलेस में" data-en="Welcome to Moolchand Royal Palace">स्वागत है मूलचंद रॉयल पैलेस में</p>
+        <h1 class="hero-title">
+          <span class="hero-line1" data-hi="जहाँ सपने" data-en="Where Dreams">जहाँ सपने</span>
+          <em class="hero-line2" data-hi="यादें बन जाते हैं" data-en="Become Memories">यादें बन जाते हैं</em>
+        </h1>
+        <p class="hero-sub" data-hi="आपके सबसे खास जश्न के लिए एक शाही स्थल — विवाह, रिसेप्शन और भव्य आयोजन।" data-en="A majestic venue for your most cherished celebrations — weddings, receptions &amp; grand events.">आपके सबसे खास जश्न के लिए एक शाही स्थल — विवाह, रिसेप्शन और भव्य आयोजन।</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-gold" data-hi="तारीख सुरक्षित करें" data-en="Reserve Your Date">तारीख सुरक्षित करें</a>
+          <a href="#gallery" class="btn btn-outline-white" data-hi="गैलरी देखें" data-en="View Gallery">गैलरी देखें</a>
+        </div>
+      </div>
+      <a href="#features" class="scroll-indicator" aria-label="Scroll down">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M12 5v14"/><path d="M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </section>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
+    <!-- ===== FEATURES ===== -->
+    <section class="features" id="features">
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 data-hi="AC बैंक्वेट हॉल" data-en="AC Banquet Hall">AC बैंक्वेट हॉल</h3>
+          <p data-hi="4,000 मेहमानों तक के लिए विशाल व आरामदायक एयर कंडीशन हॉल" data-en="Spacious air-conditioned halls comfortably hosting up to 4,000 guests">4,000 मेहमानों तक के लिए विशाल व आरामदायक एयर कंडीशन हॉल</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3 data-hi="लक्ज़री डेकोर" data-en="Luxury Décor">लक्ज़री डेकोर</h3>
+          <p data-hi="आपके खास दिन को यादगार बनाने के लिए भव्य शाही सजावट" data-en="Bespoke royal decorations crafted to make your special day unforgettable">आपके खास दिन को यादगार बनाने के लिए भव्य शाही सजावट</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <h3 data-hi="विशाल पार्किंग" data-en="Ample Parking">विशाल पार्किंग</h3>
+          <p data-hi="सभी मेहमानों के लिए सुरक्षित व विशाल पार्किंग सुविधा" data-en="Secure and spacious parking facilities for all your guests">सभी मेहमानों के लिए सुरक्षित व विशाल पार्किंग सुविधा</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3 data-hi="प्रीमियम सेवा" data-en="Premium Service">प्रीमियम सेवा</h3>
+          <p data-hi="हर पल को खास बनाने के लिए समर्पित इवेंट मैनेजमेंट टीम" data-en="Dedicated event coordinators ensuring every detail is perfect">हर पल को खास बनाने के लिए समर्पित इवेंट मैनेजमेंट टीम</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-image-wrap reveal">
+          <img src="images/Finalised-Building.png" alt="Moolchand Royal Palace Building" class="about-img" />
+        </div>
+        <div class="about-text-wrap reveal">
+          <p class="eyebrow" data-hi="हमारी कहानी" data-en="Our Story">हमारी कहानी</p>
+          <h2 class="section-title" data-hi="भव्य समारोहों की विरासत" data-en="A Legacy of Grand Celebrations">भव्य समारोहों की विरासत</h2>
+          <div class="ornament-line"><span></span><span class="orn-gem">◆</span><span></span></div>
+          <p class="body-text" data-hi="मूलचंद रॉयल पैलेस में हम शाही परंपराओं की भव्यता को आधुनिक विलासिता के साथ जोड़ते हैं। हमीरपुर के राठ में स्थित हमारे स्थल पर अनगिनत स्वप्निल विवाह और भव्य उत्सव आयोजित हो चुके हैं।" data-en="Moolchand Royal Palace unites the grandeur of royal traditions with modern luxury. Nestled in the heart of Rath, Hamirpur, our venue has been the breathtaking backdrop of countless dream weddings.">मूलचंद रॉयल पैलेस में हम शाही परंपराओं की भव्यता को आधुनिक विलासिता के साथ जोड़ते हैं। हमीरपुर के राठ में स्थित हमारे स्थल पर अनगिनत स्वप्निल विवाह और भव्य उत्सव आयोजित हो चुके हैं।</p>
+          <p class="body-text" data-hi="हम जो भी आयोजन करते हैं, उसमें हर विवरण पर सूक्ष्म ध्यान दिया जाता है — ताकि आपके खास पल हमेशा के लिए यादगार बन जाएं। हमारी अनुभवी टीम आपको अतुलनीय अनुभव देने के लिए प्रतिबद्ध है।" data-en="Every event we host is crafted with meticulous attention to detail, ensuring your special moments are preserved in memory forever. Our experienced team is committed to delivering an unparalleled experience.">हम जो भी आयोजन करते हैं, उसमें हर विवरण पर सूक्ष्म ध्यान दिया जाता है — ताकि आपके खास पल हमेशा के लिए यादगार बन जाएं।</p>
+          <a href="#contact" class="btn btn-navy" data-hi="अभी पूछताछ करें" data-en="Enquire Now">अभी पूछताछ करें</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OCCASIONS ===== -->
+    <section class="occasions" id="occasions">
+      <div class="occasions-container">
+        <div class="occasions-header reveal">
+          <p class="eyebrow light" data-hi="आयोजन" data-en="Occasions">आयोजन</p>
+          <h2 class="section-title light" data-hi="हर अवसर के लिए एकदम सही" data-en="Perfect for Every Occasion">हर अवसर के लिए एकदम सही</h2>
+          <div class="ornament-line light"><span></span><span class="orn-gem">◆</span><span></span></div>
+          <p class="occasions-sub" data-hi="शादी से लेकर कॉर्पोरेट इवेंट तक — हम हर खास मौके को भव्य बनाते हैं।" data-en="From weddings to corporate events — we make every special moment grand.">शादी से लेकर कॉर्पोरेट इवेंट तक — हम हर खास मौके को भव्य बनाते हैं।</p>
+        </div>
+        <div class="occasions-grid">
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 data-hi="विवाह" data-en="Wedding">विवाह</h3>
+            <p data-hi="शाही विवाह समारोह" data-en="Royal Wedding Ceremony">शाही विवाह समारोह</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <h3 data-hi="सगाई" data-en="Engagement">सगाई</h3>
+            <p data-hi="रिंग सेरेमनी व सगाई रस्म" data-en="Ring Ceremony &amp; Engagement">रिंग सेरेमनी व सगाई रस्म</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+              </svg>
+            </div>
+            <h3 data-hi="संगीत व मेहंदी" data-en="Sangeet &amp; Mehndi">संगीत व मेहंदी</h3>
+            <p data-hi="रंगारंग संगीत व मेहंदी की रात" data-en="Colourful Sangeet &amp; Mehndi Night">रंगारंग संगीत व मेहंदी की रात</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <h3 data-hi="रिसेप्शन" data-en="Reception">रिसेप्शन</h3>
+            <p data-hi="भव्य वेडिंग रिसेप्शन पार्टी" data-en="Grand Wedding Reception Party">भव्य वेडिंग रिसेप्शन पार्टी</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                <path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 data-hi="हल्दी" data-en="Haldi Ceremony">हल्दी</h3>
+            <p data-hi="पारंपरिक हल्दी रस्म" data-en="Traditional Haldi Ritual">पारंपरिक हल्दी रस्म</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/>
+              </svg>
+            </div>
+            <h3 data-hi="कॉर्पोरेट इवेंट" data-en="Corporate Event">कॉर्पोरेट इवेंट</h3>
+            <p data-hi="कॉन्फ्रेंस, सेमिनार व मीटिंग" data-en="Conferences, Seminars &amp; Meetings">कॉन्फ्रेंस, सेमिनार व मीटिंग</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+              </svg>
+            </div>
+            <h3 data-hi="जन्मदिन पार्टी" data-en="Birthday Party">जन्मदिन पार्टी</h3>
+            <p data-hi="यादगार जन्मदिन का जश्न" data-en="Memorable Birthday Celebration">यादगार जन्मदिन का जश्न</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 data-hi="सालगिरह" data-en="Anniversary">सालगिरह</h3>
+            <p data-hi="रजत व स्वर्ण सालगिरह उत्सव" data-en="Silver &amp; Golden Anniversary Celebration">रजत व स्वर्ण सालगिरह उत्सव</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 data-hi="गोद भराई" data-en="Baby Shower">गोद भराई</h3>
+            <p data-hi="शुभ गोद भराई की रस्म" data-en="Auspicious Baby Shower Ceremony">शुभ गोद भराई की रस्म</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <h3 data-hi="मुंडन / नामकरण" data-en="Mundan / Namkaran">मुंडन / नामकरण</h3>
+            <p data-hi="पवित्र मुंडन व नामकरण संस्कार" data-en="Sacred Mundan &amp; Naming Ceremony">पवित्र मुंडन व नामकरण संस्कार</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 data-hi="पूजा व धार्मिक" data-en="Puja &amp; Religious">पूजा व धार्मिक</h3>
+            <p data-hi="यज्ञ, पूजा व धार्मिक समारोह" data-en="Yagna, Puja &amp; Religious Gatherings">यज्ञ, पूजा व धार्मिक समारोह</p>
+          </div>
+
+          <div class="occ-card reveal">
+            <div class="occ-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 data-hi="अन्य समारोह" data-en="Other Occasions">अन्य समारोह</h3>
+            <p data-hi="हर खास मौके के लिए हम तैयार" data-en="We are ready for every special occasion">हर खास मौके के लिए हम तैयार</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AMENITIES ===== -->
+    <section class="amenities" id="amenities">
+      <div class="amenities-container">
+        <div class="amenities-header reveal">
+          <p class="eyebrow" data-hi="सुविधाएं व सेवाएं" data-en="Amenities &amp; Services">सुविधाएं व सेवाएं</p>
+          <h2 class="section-title" data-hi="विश्वस्तरीय सुविधाएं" data-en="World-Class Amenities">विश्वस्तरीय सुविधाएं</h2>
+          <div class="ornament-line"><span></span><span class="orn-gem">◆</span><span></span></div>
+          <p class="amenities-sub" data-hi="हमारा स्थल आपके आयोजन को परिपूर्ण बनाने के लिए हर आवश्यक सुविधा से लैस है।" data-en="Our venue is fully equipped with every facility to make your event perfect.">हमारा स्थल आपके आयोजन को परिपूर्ण बनाने के लिए हर आवश्यक सुविधा से लैस है।</p>
+        </div>
+        <div class="amenities-grid">
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="AC बैंक्वेट हॉल" data-en="AC Banquet Hall">AC बैंक्वेट हॉल</strong>
+              <span data-hi="4,000 मेहमानों तक की क्षमता" data-en="Capacity for up to 4,000 guests">4,000 मेहमानों तक की क्षमता</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="खुला लॉन व बगीचा" data-en="Open Lawn &amp; Garden">खुला लॉन व बगीचा</strong>
+              <span data-hi="बाहरी आयोजन के लिए विशाल हरा-भरा लॉन" data-en="Spacious green lawn for outdoor events">बाहरी आयोजन के लिए विशाल हरा-भरा लॉन</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="लक्ज़री ब्राइडल सूट" data-en="Luxury Bridal Suite">लक्ज़री ब्राइडल सूट</strong>
+              <span data-hi="दुल्हन के लिए विशेष शाही कमरा" data-en="Exclusive royal room for the bride">दुल्हन के लिए विशेष शाही कमरा</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="दूल्हे का चेंजिंग रूम" data-en="Groom's Dressing Room">दूल्हे का चेंजिंग रूम</strong>
+              <span data-hi="दूल्हे के लिए अलग सुविधाजनक कमरा" data-en="Separate comfortable room for the groom">दूल्हे के लिए अलग सुविधाजनक कमरा</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="प्रोफेशनल स्टेज व लाइटिंग" data-en="Professional Stage &amp; Lighting">प्रोफेशनल स्टेज व लाइटिंग</strong>
+              <span data-hi="आधुनिक LED लाइटिंग के साथ विशाल स्टेज" data-en="Grand stage with modern LED lighting setup">आधुनिक LED लाइटिंग के साथ विशाल स्टेज</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="साउंड सिस्टम व DJ" data-en="Sound System &amp; DJ Setup">साउंड सिस्टम व DJ</strong>
+              <span data-hi="हाई-फाई साउंड सिस्टम व DJ व्यवस्था" data-en="Hi-fi sound system and DJ arrangement">हाई-फाई साउंड सिस्टम व DJ व्यवस्था</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="जनरेटर बैकअप" data-en="Generator Backup">जनरेटर बैकअप</strong>
+              <span data-hi="निर्बाध बिजली आपूर्ति की पूरी व्यवस्था" data-en="Uninterrupted power supply throughout the event">निर्बाध बिजली आपूर्ति की पूरी व्यवस्था</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="CCTV सुरक्षा" data-en="CCTV Security">CCTV सुरक्षा</strong>
+              <span data-hi="24/7 CCTV निगरानी व सुरक्षा गार्ड" data-en="24/7 CCTV surveillance and security guards">24/7 CCTV निगरानी व सुरक्षा गार्ड</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="200+ वाहन पार्किंग" data-en="200+ Vehicle Parking">200+ वाहन पार्किंग</strong>
+              <span data-hi="सुरक्षित व विशाल पार्किंग स्थल" data-en="Secure and spacious parking area">सुरक्षित व विशाल पार्किंग स्थल</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 11V7a4 4 0 00-8 0v4"/><rect x="3" y="11" width="18" height="11" rx="2"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="इन-हाउस कैटरिंग किचन" data-en="In-house Catering Kitchen">इन-हाउस कैटरिंग किचन</strong>
+              <span data-hi="स्वच्छ व आधुनिक रसोई व खान-पान सेवा" data-en="Hygienic modern kitchen and catering service">स्वच्छ व आधुनिक रसोई व खान-पान सेवा</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="इवेंट कोऑर्डिनेटर" data-en="Event Coordinator">इवेंट कोऑर्डिनेटर</strong>
+              <span data-hi="अनुभवी टीम जो हर व्यवस्था संभाले" data-en="Experienced team managing every arrangement">अनुभवी टीम जो हर व्यवस्था संभाले</span>
+            </div>
+          </div>
+
+          <div class="am-item reveal">
+            <div class="am-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <div class="am-text">
+              <strong data-hi="शाही डेकोर सेवा" data-en="Royal Décor Service">शाही डेकोर सेवा</strong>
+              <span data-hi="फूलों, लाइट्स व शाही सजावट की पूरी सेवा" data-en="Complete floral, lighting &amp; royal decoration service">फूलों, लाइट्स व शाही सजावट की पूरी सेवा</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery" id="gallery">
+      <div class="gallery-header reveal">
+        <p class="eyebrow light" data-hi="हमारा स्थल" data-en="Our Venue">हमारा स्थल</p>
+        <h2 class="section-title light" data-hi="भव्यता की एक झलक" data-en="A Glimpse of Grandeur">भव्यता की एक झलक</h2>
+        <div class="ornament-line light"><span></span><span class="orn-gem">◆</span><span></span></div>
+      </div>
+      <div class="gallery-mosaic">
+        <div class="gal-item gal-large reveal">
+          <img src="images/Finalised-Building.png" alt="Palace Building" loading="lazy" />
+          <div class="gal-sheen"></div>
+        </div>
+        <div class="gal-item reveal">
+          <img src="images/Final-Full-Photo.png" alt="Full Venue View" loading="lazy" />
+          <div class="gal-sheen"></div>
+        </div>
+        <div class="gal-item reveal">
+          <img src="images/Finalised-Banner-Hindi.png" alt="Venue Banner" loading="lazy" />
+          <div class="gal-sheen"></div>
+        </div>
+        <div class="gal-item reveal">
+          <img src="images/Cover-hindi.png" alt="Venue" loading="lazy" class="lang-gallery-img" data-hi="images/Cover-hindi.png" data-en="images/Cover-english.png" />
+          <div class="gal-sheen"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUOTE ===== -->
+    <section class="quote-band">
+      <div class="quote-inner">
+        <div class="quote-mark">❝</div>
+        <blockquote class="quote-text" data-hi="हर प्रेम कहानी सुंदर होती है — लेकिन आपकी असाधारण होनी चाहिए।" data-en="Every love story is beautiful — but yours should be extraordinary.">हर प्रेम कहानी सुंदर होती है — लेकिन आपकी असाधारण होनी चाहिए।</blockquote>
+        <p class="quote-source" data-hi="— मूलचंद रॉयल पैलेस" data-en="— Moolchand Royal Palace">— मूलचंद रॉयल पैलेस</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+
+        <!-- Contact info -->
+        <div class="contact-info reveal">
+          <p class="eyebrow" data-hi="संपर्क करें" data-en="Get In Touch">संपर्क करें</p>
+          <h2 class="section-title" data-hi="साथ मिलकर जादू बनाएं" data-en="Let's Create Magic Together">साथ मिलकर जादू बनाएं</h2>
+          <div class="ornament-line"><span></span><span class="orn-gem">◆</span><span></span></div>
+
+          <div class="contact-items">
+            <div class="contact-row">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-row-text">
+                <strong data-hi="पता" data-en="Address">पता</strong>
+                <p data-hi="जगत राज कॉलेज के पास, चरखारी रोड, राठ, हमीरपुर, उत्तर प्रदेश" data-en="Near Jagat Raj College, Charkhari Road, Rath, Hamirpur, Uttar Pradesh">जगत राज कॉलेज के पास, चरखारी रोड, राठ, हमीरपुर, उत्तर प्रदेश</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-row-text">
+                <strong data-hi="फोन" data-en="Phone">फोन</strong>
+                <p><a href="tel:+918447717317">+91 84477 17317</a></p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact-row-text">
+                <strong data-hi="ईमेल" data-en="Email">ईमेल</strong>
+                <p><a href="mailto:moolchand.palace@gmail.com">moolchand.palace@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-btns">
+            <a href="tel:+918447717317" class="btn btn-gold" data-hi="कॉल करें" data-en="Call Us">कॉल करें</a>
+            <a href="mailto:moolchand.palace@gmail.com" class="btn btn-outline-navy" data-hi="ईमेल करें" data-en="Email Us">ईमेल करें</a>
+          </div>
+        </div>
+
+        <!-- Inquiry form — set your Formspree ID at https://formspree.io -->
+        <form class="contact-form reveal" id="inquiry-form"
+              action="https://formspree.io/f/mpqgqzqz"
+              method="POST" novalidate>
+
+          <input type="hidden" name="_subject" value="New Booking Enquiry — Moolchand Royal Palace" />
+
+          <h3 class="form-heading" data-hi="बुकिंग पूछताछ" data-en="Booking Enquiry">बुकिंग पूछताछ</h3>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" data-hi="आपका नाम *" data-en="Your Name *">आपका नाम *</label>
+              <input class="form-input" type="text" name="name" required
+                data-phi="अपना नाम लिखें" data-pen="Enter your name"
+                placeholder="अपना नाम लिखें" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-hi="फोन नंबर *" data-en="Phone Number *">फोन नंबर *</label>
+              <input class="form-input" type="tel" name="phone" required
+                data-phi="फोन नंबर लिखें" data-pen="Enter phone number"
+                placeholder="फोन नंबर लिखें" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-hi="ईमेल" data-en="Email Address">ईमेल</label>
+              <input class="form-input" type="email" name="email"
+                data-phi="ईमेल लिखें (वैकल्पिक)" data-pen="Email address (optional)"
+                placeholder="ईमेल लिखें (वैकल्पिक)" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-hi="आयोजन का प्रकार *" data-en="Occasion Type *">आयोजन का प्रकार *</label>
+              <select class="form-select" name="occasion" required>
+                <option value="" data-hi="चुनें..." data-en="Select...">चुनें...</option>
+                <option value="विवाह / Wedding">विवाह / Wedding</option>
+                <option value="सगाई / Engagement">सगाई / Engagement</option>
+                <option value="संगीत व मेहंदी / Sangeet & Mehndi">संगीत व मेहंदी / Sangeet &amp; Mehndi</option>
+                <option value="रिसेप्शन / Reception">रिसेप्शन / Reception</option>
+                <option value="हल्दी / Haldi">हल्दी / Haldi</option>
+                <option value="जन्मदिन पार्टी / Birthday">जन्मदिन पार्टी / Birthday</option>
+                <option value="कॉर्पोरेट इवेंट / Corporate">कॉर्पोरेट इवेंट / Corporate</option>
+                <option value="सालगिरह / Anniversary">सालगिरह / Anniversary</option>
+                <option value="गोद भराई / Baby Shower">गोद भराई / Baby Shower</option>
+                <option value="मुंडन / Mundan">मुंडन / Mundan</option>
+                <option value="पूजा / Religious">पूजा / Religious</option>
+                <option value="अन्य / Other">अन्य / Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-hi="आयोजन की तारीख" data-en="Event Date">आयोजन की तारीख</label>
+              <input class="form-input" type="date" name="event_date" id="event-date" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-hi="मेहमानों की संख्या" data-en="Number of Guests">मेहमानों की संख्या</label>
+              <input class="form-input" type="number" name="guests" min="10" max="4000"
+                data-phi="अनुमानित संख्या" data-pen="Approximate count"
+                placeholder="अनुमानित संख्या" />
+            </div>
+          </div>
+
+          <div class="form-group form-group-full">
+            <label class="form-label" data-hi="संदेश / विशेष आवश्यकताएं" data-en="Message / Special Requirements">संदेश / विशेष आवश्यकताएं</label>
+            <textarea class="form-textarea" name="message" rows="4"
+              data-phi="कोई विशेष जानकारी या आवश्यकता लिखें..." data-pen="Any special requirements or message..."
+              placeholder="कोई विशेष जानकारी या आवश्यकता लिखें..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold form-submit" id="form-submit-btn">
+            <span class="submit-label" data-hi="पूछताछ भेजें" data-en="Send Enquiry">पूछताछ भेजें</span>
+            <svg class="submit-spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </button>
+
+          <div class="form-status" id="form-status" role="alert"></div>
+        </form>
+
+      </div>
+
+      <!-- Map: full width -->
+      <div class="contact-map-full reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.838974160916!2d79.58452477600572!3d25.57702351621043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399d4318bee263cf%3A0x8a293f798294bd4f!2sMoolchand%20Royal%20Palace!5e0!3m2!1sen!2sin!4v1781770556211!5m2!1sen!2sin"
+          loading="lazy"
+          title="Moolchand Royal Palace on Google Maps"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/Logo-hindi.png" alt="Moolchand Royal Palace" class="footer-logo lang-logo" data-hi="images/Logo-hindi.png" data-en="images/Logo-english.png" />
+        <div>
+          <p class="footer-name" data-hi="मूलचंद रॉयल पैलेस" data-en="Moolchand Royal Palace">मूलचंद रॉयल पैलेस</p>
+          <p class="footer-tagline" data-hi="शाही विवाह स्थल" data-en="Premium Wedding Venue">शाही विवाह स्थल</p>
+        </div>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Moolchand Royal Palace. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ── Year ──────────────────────────────────────────────────────────────────
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ── Language toggle ───────────────────────────────────────────────────────
+    let lang = localStorage.getItem('mrp_lang') || 'hi';
+
+    function applyLang(l) {
+      lang = l;
+      document.documentElement.lang = l;
+      document.documentElement.dataset.lang = l;
+
+      // Text nodes
+      document.querySelectorAll('[data-hi]').forEach(el => {
+        const val = el.dataset[l];
+        if (val !== undefined) el.textContent = val;
+      });
+
+      // Logo images
+      document.querySelectorAll('.lang-logo').forEach(img => {
+        img.src = img.dataset[l];
+      });
+
+      // Gallery images
+      document.querySelectorAll('.lang-gallery-img').forEach(img => {
+        img.src = img.dataset[l];
+      });
+
+      // Toggle button state
+      document.getElementById('lo-hi').classList.toggle('active', l === 'hi');
+      document.getElementById('lo-en').classList.toggle('active', l === 'en');
+
+      localStorage.setItem('mrp_lang', l);
+    }
+
+    document.getElementById('lang-toggle').addEventListener('click', () => {
+      applyLang(lang === 'hi' ? 'en' : 'hi');
+    });
+
+    // Initialise
+    applyLang(lang);
+
+    // ── Navbar scroll effect ──────────────────────────────────────────────────
+    const navbar = document.getElementById('navbar');
+    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 60);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ── Mobile hamburger ──────────────────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+    });
+
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ── Scroll-reveal ─────────────────────────────────────────────────────────
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ── Set min date for event date picker ───────────────────────────────────
+    const dateInput = document.getElementById('event-date');
+    if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
+
+    // ── Bilingual placeholders ────────────────────────────────────────────────
+    // Called inside applyLang — patch applyLang to also update placeholders
+    const _origApplyLang = applyLang;
+    // Re-declare to extend (applyLang is already defined above)
+    // We add placeholder handling inside the existing applyLang via a post-hook:
+    const updatePlaceholders = (l) => {
+      document.querySelectorAll('[data-phi]').forEach(el => {
+        el.placeholder = l === 'hi' ? el.dataset.phi : el.dataset.pen;
+      });
+    };
+    // Patch: wrap the lang toggle click to also update placeholders
+    document.getElementById('lang-toggle').addEventListener('click', () => {
+      updatePlaceholders(lang); // lang is already updated by applyLang inside the original handler
+    });
+    updatePlaceholders(lang); // run once on load
+
+    // ── Inquiry form submission (Formspree AJAX) ──────────────────────────────
+    const inquiryForm = document.getElementById('inquiry-form');
+    const formStatus  = document.getElementById('form-status');
+    const submitBtn   = document.getElementById('form-submit-btn');
+
+    const formMessages = {
+      hi: {
+        sending:  'भेजा जा रहा है…',
+        success:  '✓ आपकी पूछताछ मिल गई! हम जल्द ही आपसे संपर्क करेंगे।',
+        error:    '✗ कुछ गलत हुआ। कृपया दोबारा प्रयास करें या हमें सीधे कॉल करें।',
+        invalid:  'कृपया सभी आवश्यक फ़ील्ड भरें।',
+      },
+      en: {
+        sending:  'Sending…',
+        success:  '✓ Enquiry received! We\'ll get back to you shortly.',
+        error:    '✗ Something went wrong. Please try again or call us directly.',
+        invalid:  'Please fill in all required fields.',
+      },
+    };
+
+    if (inquiryForm) {
+      inquiryForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Basic client-side validation
+        if (!inquiryForm.checkValidity()) {
+          showStatus('invalid', 'error');
+          inquiryForm.reportValidity();
+          return;
+        }
+
+        setSubmitting(true);
+        showStatus('sending', '');
+
+        try {
+          const res = await fetch(inquiryForm.action, {
+            method: 'POST',
+            body: new FormData(inquiryForm),
+            headers: { 'Accept': 'application/json' },
+          });
+
+          if (res.ok) {
+            showStatus('success', 'success');
+            inquiryForm.reset();
+          } else {
+            showStatus('error', 'error');
+          }
+        } catch {
+          showStatus('error', 'error');
+        } finally {
+          setSubmitting(false);
+        }
+      });
+    }
+
+    function setSubmitting(on) {
+      submitBtn.disabled = on;
+      submitBtn.classList.toggle('submitting', on);
+    }
+
+    function showStatus(key, type) {
+      const l = document.documentElement.dataset.lang || 'hi';
+      formStatus.textContent = formMessages[l][key] || '';
+      formStatus.className = 'form-status' + (type ? ' ' + type : '');
+    }
+  </script>
+</body>
 </html>
